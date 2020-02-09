@@ -56,4 +56,5 @@ functions:
 
 plugins:
   - serverless-websockets-plugin
+  - serverless-offline-ssm
   - serverless-offline

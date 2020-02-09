@@ -32,7 +32,7 @@ module.exports.hello = async event => {
   // console.log('connection! ', event)
   console.log('connection! ', JSON.stringify(event))
 
-  sendMessageToClient(event, connectionId, {"data": "hey"})
+  sendMessageToClient(event, connectionId, {"data": "yeah budddaaaayyyyy!"})
 
   console.log('hmm')
   // return null
@@ -113,11 +113,13 @@ const sendMessageToClient = (event, connectionId, payload) =>
     console.log('e', event)
     console.log('e', event.requestContext)
 
-    console.log('calling... ', "ws://" + event.requestContext.domainName + '/' + event.requestContext.stage)
+    const WS_POST_ENDPOINT = "http://" + event.requestContext.domainName + ":8001"
+
+    console.log('calling... ', WS_POST_ENDPOINT)
 
     const apigatewaymanagementapi = new AWS.ApiGatewayManagementApi({
       apiVersion: '2018-11-29',
-      endpoint: "ws://" + event.requestContext.domainName + ':3000/' + event.requestContext.stage,
+      endpoint: WS_POST_ENDPOINT,
     });
     apigatewaymanagementapi.postToConnection(
       {

@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/JimTheMan/Serverless-Websockets-Lambda-NodeJs/issues"
   },
-  "homepage": "https://github.com/JimTheMan/Serverless-Websockets-Lambda-NodeJs#readme"
+  "homepage": "https://github.com/JimTheMan/Serverless-Websockets-Lambda-NodeJs#readme",
+  "devDependencies": {
+    "serverless-offline": "^5.12.1",
+    "serverless-offline-ssm": "^4.1.2"
+  }
 }
