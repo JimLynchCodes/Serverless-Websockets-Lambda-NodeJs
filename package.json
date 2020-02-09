@@ -1,0 +1,20 @@
+{
+  "name": "serverless-websockets-lambda-nodejs",
+  "version": "0.0.1",
+  "description": "An example of a websocket server built on top of serverless AWS Lambda!",
+  "main": "handler.js",
+  "scripts": {
+    "start": "serverless offline start",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimTheMan/Serverless-Websockets-Lambda-NodeJs.git"
+  },
+  "author": "JimTheMan <mrdotjim@gmail.com> (http://www.wisdomofjim.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JimTheMan/Serverless-Websockets-Lambda-NodeJs/issues"
+  },
+  "homepage": "https://github.com/JimTheMan/Serverless-Websockets-Lambda-NodeJs#readme"
+}
