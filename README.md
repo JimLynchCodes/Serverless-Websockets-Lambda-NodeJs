@@ -29,3 +29,8 @@ Once connected, send a message!
 ```
 {"action": "foo", "data": {"oh":"yeahhhh"}}
 ```
+
+Deploy:
+```
+serverless deploy
+```
