@@ -29,17 +29,25 @@ provider:
 functions:
   hello:
     handler: handler.hello
+
   connectionHandler:
     handler: handler.connectionHandler
     events:
       - websocket:
           route: $connect
+
+  disconnectionHandler:
+    handler: handler.disconnectionHandler
+    events:
       - websocket:
           route: $disconnect
+
   defaultHandler:
     handler: handler.defaultHandler
     events:
-      - websocket: $default #simple event definition without extra route property
+      - websocket:
+          route: $default #simple event definition without extra route property
+
   customFooHandler:
     handler: handler.fooHandler
     events:
@@ -48,3 +56,4 @@ functions:
 
 plugins:
   - serverless-websockets-plugin
+  - serverless-offline
